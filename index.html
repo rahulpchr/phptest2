@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image" href="https://media.licdn.com/dms/image/v2/D4D0BAQHoeCkNNvQM3w/company-logo_200_200/company-logo_200_200/0/1721818672696/learnmize_logo?e=2147483647&v=beta&t=du6Z8U8v_u910YfRF6QhOGjTDdYRhYjbrixh8LJbzvE">
+  <title>LearnMize Navbar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+    <style>
+    /* Animation for scrolling logos */
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .marquee-content {
+      display: flex;
+      width: 200%;
+      animation: marquee 25s linear infinite;
+    }
+
+    .marquee-content img {
+      margin-right: 3rem;
+      height: 40px;
+      object-fit: contain;
+    }
+    /* Custom styling for the cards */
+        .card {
+            border-radius: 1rem;
+            background-color: #f7f7f7;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+  </style>
+
+</head>
+<body class="bg-[#f8fbfe]">
+
+  <!-- Navbar -->
+  <nav class="mx-auto my-4 w-11/12 max-w-6xl flex items-center justify-between rounded-2xl border border-gray-200 bg-white px-6 py-3 shadow-sm">
+    
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+      <!-- <img src="https://media.licdn.com/dms/image/v2/D4D0BAQHoeCkNNvQM3w/company-logo_200_200/company-logo_200_200/0/1721818672696/learnmize_logo?e=2147483647&v=beta&t=du6Z8U8v_u910YfRF6QhOGjTDdYRhYjbrixh8LJbzvE" alt="LearnMize Logo" class="w-10 h-10" />  -->
+      <h1 class="text-2xl font-extrabold text-[#02021C]">
+        LEARN <span class="text-[#77b5f8]">MIZE</span>
+      </h1>
+    </div>
+
+    <!-- Menu Links -->
+    <ul class="flex space-x-8 text-lg font-semibold text-black">
+      <li><a href="#" class="hover:text-blue-600">HOME</a></li>
+      <li><a href="#" class="hover:text-blue-600">ABOUT</a></li>
+      <li><a href="#" class="hover:text-blue-600">CONTACT US</a></li>
+      <li><a href="#" class="hover:text-blue-600">BLOGS</a></li>
+    </ul>
+
+    <!-- Login Button -->
+    <a href="#"
+      class="rounded-full bg-gradient-to-r from-purple-500 to-blue-500 px-8 py-2 text-white font-semibold shadow hover:opacity-90 transition">
+      Login
+    </a>
+
+  </nav>
+
+<!-- Hero Section -->
+  <section class="relative mx-auto my-8 w-11/12 max-w-7xl rounded-3xl border border-gray-200 bg-white overflow-hidden">
+    
+    <!-- Background with gradient lights and grid -->
+    <div class="absolute inset-0 bg-[url('https://i.ibb.co/W4XQQwc3/grid-bg.jpg')] bg-cover bg-center">
+      <div class="absolute inset-0 bg-gradient-to-tr from-[#f3e8ff] via-[#e0f2fe] to-transparent opacity-60"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 text-center py-16">
+      
+      <!-- Small header -->
+      <div class="flex justify-center items-center space-x-2 mb-4">
+        <img src="https://blog.adymize.com/wp-content/uploads/2025/08/imgi_35_image-22.png" alt="Students" class="w-8 h-8 rounded-full" />
+        <p class="text-sm font-semibold text-gray-600">100K+ Students Trained</p>
+      </div>
+
+      <!-- Heading -->
+      <h1 class="text-3xl md:text-5xl font-extrabold text-[#0a0a23]">
+        Get Hired Faster With <br />
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-sky-500">
+          Digital Marketing & AI Skills
+        </span>
+      </h1>
+
+      <!-- Subheading -->
+      <p class="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
+        Mentor-led cohorts, real client projects, and placement support – built for India’s fastest-growing roles.
+      </p>
+
+      <!-- Floating Thumbnails -->
+      <div>
+        <img src="https://learnmize.com/wp-content/uploads/2025/09/4-1.webp" alt="Student 1" class="absolute top-10 left-10 w-20 h-20 rounded-xl transform rotate-6 shadow-lg"/>
+        <img src="https://learnmize.com/wp-content/uploads/2025/09/1.webp" alt="Student 2" class="absolute bottom-16 left-32 w-20 h-20 rounded-xl transform -rotate-6 shadow-lg"/>
+        <img src="https://learnmize.com/wp-content/uploads/2025/09/4-1.webp" alt="Student 3" class="absolute top-10 right-10 w-20 h-20 rounded-xl transform -rotate-6 shadow-lg"/>
+        <img src="https://learnmize.com/wp-content/uploads/2025/09/4-1.webp" alt="Student 4" class="absolute bottom-16 right-32 w-20 h-20 rounded-xl transform rotate-6 shadow-lg"/>
+      </div>
+
+      <!-- Main Hero Image -->
+      <div class="mt-12 flex justify-center">
+  <div class="w-full max-w-4xl h-[300px] overflow-hidden">
+    <img 
+      src="https://learnmize.com/wp-content/uploads/2025/09/Group-13.webp" 
+      alt="Group of students" 
+      class="w-full object-cover object-top"
+    />
+  </div>
+</div>
+
+
+      <!-- Partner Logos -->
+      <div class="mt-8 flex flex-wrap justify-center items-center gap-8 pb-8">
+        <img src="https://learnmize.com/wp-content/uploads/2025/09/Group-5-3.png" alt="Meta" class="h-10" />
+        
+      </div>
+    </div>
+  </section>
+   <!-- Featured Section -->
+  <section class="bg-[#3b45ff] py-4">
+    <div class="flex items-center overflow-hidden">
+      
+      <!-- Static Text -->
+      <div class="flex-shrink-0 pl-8 pr-4 text-white text-lg font-semibold">
+        As Featured In
+      </div>
+
+      <!-- Marquee Container -->
+      <div class="relative flex-1 overflow-hidden">
+        <div class="marquee-content items-center">
+          
+          <!-- Logos -->
+          <img src="zee-business.png" alt="Zee Business">
+          <img src="tedx.png" alt="TEDx">
+          <img src="republic-bharat.png" alt="Republic Bharat">
+          <img src="https://learnmize.com/wp-content/uploads/2025/09/hindustan-times_.png" alt="Hindustan Times">
+          <img src="https://learnmize.com/wp-content/uploads/2025/09/yahoo-new.png" alt="Yahoo News">
+          <img src="https://learnmize.com/wp-content/uploads/2025/09/Layer-1.png" alt="Josh Talks">
+          <img src="https://learnmize.com/wp-content/uploads/2025/09/Zbusiness.png" alt="Zee Business">
+
+          <!-- Duplicate logos for smooth looping -->
+          <img src="zee-business.png" alt="Zee Business">
+          <img src="https://learnmize.com/wp-content/uploads/2025/09/TEDx.png" alt="TEDx">
+          <img src="https://learnmize.com/wp-content/uploads/2025/09/R.-bharat.png" alt="Republic Bharat">
+          <img src="hindustan-times.png" alt="Hindustan Times">
+          <img src="https://learnmize.com/wp-content/uploads/2025/09/yahoo-new.png" alt="Yahoo News">
+          <img src="josh-talks.png" alt="Josh Talks">
+          <img src="zee-business.png" alt="Zee Business">
+
+        </div>
+      </div>
+    </div>
+  </section>
+<div class="px-8 py-12 bg-gray-50">
+  <!-- Container to hold all sections -->
+  <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <!-- Left Section (Image + Text) -->
+    <div class="flex flex-col justify-center items-start">
+      <img src="https://learnmize.com/wp-content/uploads/2025/09/Sequence-05.00_00_47_14.Still007-11-1.webp" alt="Student Training" class="w-full h-64 object-cover rounded-lg mb-0">
+      <p class="text-lg bg-[#a9e0d8] text-black font-semibold">
+        Google & Meta Ads, GA4, ChatGPT, N8N, Social Media — Taught With Live Briefs
+      </p>
+    </div>
+
+    <!-- Middle Section (Student Stats + Instructors) -->
+    <div class="flex flex-col justify-center items-center text-center">
+      <p class="text-xl font-semibold text-green-500 mb-4">
+        100,000+ students trained across Digital Marketing and AI
+      </p>
+      <div class="flex justify-center gap-4 mb-4">
+        <!-- Instructors' Avatars -->
+        <img src="https://learnmize.com/wp-content/uploads/2025/09/png-1-1.webp" alt="Instructor 1" class="w-full h-12 rounded-full border-2 border-white">
+        <!-- <img src="your-avatar-url" alt="Instructor 2" class="w-12 h-12 rounded-full border-2 border-white">
+        <img src="your-avatar-url" alt="Instructor 3" class="w-12 h-12 rounded-full border-2 border-white"> -->
+      </div>
+      <p class="text-sm text-gray-600 font-medium bg-[#7ceed0]">
+        "Believe in your potential, commit to learning, and success will chase you."
+      </p>
+      <p class="font-semibold text-gray-800 mt-2 bg-[#7ceed0]">Aryan Tripathi, Founder</p>
+    </div>
+
+    <!-- Right Section (Live Session Details) -->
+    <div class="flex flex-col justify-center items-start">
+      <img src="https://learnmize.com/wp-content/uploads/2025/09/DSC05716.00_00_07_18.Still002-1.webp" alt="Mentor-Led Session" class="w-full h-64 object-cover rounded-lg mb-6">
+      <p class="text-lg text-white font-semibold bg-[#00a6d8]">
+        Live, Mentor-Led Sessions With Practical Demos And Campaign Reviews.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Container for the courses -->
+    <div class="max-w-screen-xl mx-auto px-6">
+        <h2 class="text-3xl font-semibold text-center mb-12">Complete Digital Marketing Courses</h2>
+
+        <!-- Course container -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Foundation Card -->
+            <div class="card p-6">
+                <!-- Image above Foundation -->
+                <div class="mb-4">
+                    <img class="w-full rounded-lg" src="https://via.placeholder.com/600x300?text=Digital+Marketing+Foundations" alt="Foundation Course Image">
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-purple-600">LaunchPad: Digital Marketing Foundations</h3>
+                    <p class="text-gray-700 mb-4">Build a solid base in websites, SEO, ads, and analytics—perfect for beginners and career switchers.</p>
+                    <ul class="list-disc pl-5 text-gray-600 mb-4">
+                        <li>Set up WordPress, GA4, and Search Console</li>
+                        <li>Publish SEO-ready pages and blog posts</li>
+                        <li>Draft Google & Meta ad campaigns</li>
+                        <li>Track key events and build a simple report</li>
+                    </ul>
+                    <p class="text-sm font-semibold text-gray-800 mb-4">1 Month | Beginner | Live Cohort</p>
+                    <button class="w-full bg-purple-600 text-white py-2 rounded-md hover:bg-purple-700">Enquire Now</button>
+                </div>
+            </div>
+
+            <!-- Professional Card -->
+            <div class="card p-6">
+                <!-- Image above Professional -->
+                <div class="mb-4">
+                    <img class="w-full rounded-lg" src="https://via.placeholder.com/600x300?text=Performance+Marketing+Accelerator" alt="Performance Marketing Course Image">
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-green-600">Growth Pro: Performance Marketing Accelerator</h3>
+                    <p class="text-gray-700 mb-4">Plan, launch, and optimize ROI-focused Meta & Google Ads with data-driven reporting.</p>
+                    <ul class="list-disc pl-5 text-gray-600 mb-4">
+                        <li>Full-funnel Meta Ads: cold, retargeting, lookalikes</li>
+                        <li>Google Ads: keywords, bids, extensions</li>
+                        <li>GA4 + GTM conversions & dashboards</li>
+                        <li>Scaling, A/B testing, policy compliance</li>
+                    </ul>
+                    <p class="text-sm font-semibold text-gray-800 mb-4">2 Month | Intermediate | Performance Focus</p>
+                    <button class="w-full bg-green-600 text-white py-2 rounded-md hover:bg-green-700">Enquire Now</button>
+                </div>
+            </div>
+
+            <!-- Mastery Card -->
+            <div class="card p-6">
+                <!-- Image above Mastery -->
+                <div class="mb-4">
+                    <img class="w-full rounded-lg" src="https://via.placeholder.com/600x300?text=CRO%2C+Content+%26+Lifecycle" alt="CRO Course Image">
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-teal-600">Omni Master: CRO, Content & Lifecycle</h3>
+                    <p class="text-gray-700 mb-4">Design high-converting funnels, ship content engines, and run email/WhatsApp lifecycle.</p>
+                    <ul class="list-disc pl-5 text-gray-600 mb-4">
+                        <li>Landing page UX & A/B testing</li>
+                        <li>AI-assisted content: pillar + repurposed assets</li>
+                        <li>Shopify setup with analytics and attribution</li>
+                        <li>Email & WhatsApp automations</li>
+                    </ul>
+                    <p class="text-sm font-semibold text-gray-800 mb-4">3 Month | Advanced | CRO</p>
+                    <button class="w-full bg-teal-600 text-white py-2 rounded-md hover:bg-teal-700">Enquire Now</button>
+                </div>
+            </div>
+
+            <!-- Specialization Card -->
+            <div class="card p-6">
+                <!-- Image above Specialization -->
+                <div class="mb-4">
+                    <img class="w-full rounded-lg" src="https://via.placeholder.com/600x300?text=Analytics%2C+Automation+%26+Agency" alt="Analytics Course Image">
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-orange-600">Complete: Analytics, Automation & Agency</h3>
+                    <p class="text-gray-700 mb-4">Master GTM/GA4 tracking, build automations, and package services like an agency.</p>
+                    <ul class="list-disc pl-5 text-gray-600 mb-4">
+                        <li>GTM data layer events and advanced GA4 reporting</li>
+                        <li>Zapier/n8n flows: lead routing, scoring</li>
+                        <li>Launch a digital product funnel end-to-end</li>
+                        <li>Pricing, proposals, and SOPs to scale services</li>
+                    </ul>
+                    <p class="text-sm font-semibold text-gray-800 mb-4">4 Month | Expert | GTM/GA4</p>
+                    <button class="w-full bg-orange-600 text-white py-2 rounded-md hover:bg-orange-700">Enquire Now</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+<section class="bg-indigo-600 py-16">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <!-- Heading -->
+    <h2 class="text-3xl sm:text-4xl font-bold text-white">
+      Real People Real Talk
+    </h2>
+    <p class="mt-4 text-lg text-indigo-100 max-w-3xl mx-auto">
+      Hear How Learnmize Helped Learners Move From Theory To Hands-On Skills 
+      And Into Interviews, Freelancing, Business Growth And Full-Time Roles.
+    </p>
+
+    <!-- Videos Grid -->
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Video 1 -->
+      <div class="overflow-hidden rounded-lg shadow-lg">
+        <iframe 
+          class="w-full aspect-video"
+          src="https://www.youtube.com/embed/VIDEO_ID_1"
+          title="Student Review 1"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="overflow-hidden rounded-lg shadow-lg">
+        <iframe 
+          class="w-full aspect-video"
+          src="https://www.youtube.com/embed/VIDEO_ID_2"
+          title="Student Review 2"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="overflow-hidden rounded-lg shadow-lg">
+        <iframe 
+          class="w-full aspect-video"
+          src="https://www.youtube.com/embed/VIDEO_ID_3"
+          title="Student Review 3"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="relative overflow-hidden bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 py-4">
+  <!-- Scrolling text wrapper -->
+  <div class="flex whitespace-nowrap animate-marquee">
+    <span class="mx-6 text-white font-semibold">
+      Doings • 📈 Make Every Click Count • 🔥 Design with Purpose • 🚀 Strategy Before Spend • 💡 Build Once, Repurpose Often • 📈 Make Every Click Count • 🔥 Start Small, Scale Smart • 🚀 Create. Test. Grow. • 💡 Learn by Doing • 📈 Make Every Click Count
+    </span>
+    <!-- duplicate span for seamless loop -->
+    <span class="mx-6 text-white font-semibold">
+      Doings • 📈 Make Every Click Count • 🔥 Design with Purpose • 🚀 Strategy Before Spend • 💡 Build Once, Repurpose Often • 📈 Make Every Click Count • 🔥 Start Small, Scale Smart • 🚀 Create. Test. Grow. • 💡 Learn by Doing • 📈 Make Every Click Count
+    </span>
+  </div>
+</section>
+
+<style>
+  @keyframes marquee {
+    0%   { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    display: flex;
+    width: 200%; /* double width for looping */
+    animation: marquee 25s linear infinite;
+  }
+</style>
+
+
+<section class="relative bg-black text-white">
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img
+      src="https://learnmize.com/wp-content/uploads/2025/09/classroom.jpg"
+      alt="Founder Session"
+      class="w-full h-full object-cover"
+    />
+    <!-- Gradient overlay (left side fade) -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative max-w-6xl mx-auto px-6 lg:px-12 py-16">
+    <h2 class="text-2xl sm:text-3xl font-semibold">Founder’s Message</h2>
+
+    <!-- Founder Name -->
+    <div class="inline-block mt-4 bg-blue-600 px-4 py-2 rounded-md shadow-md">
+      <span class="text-xl font-bold">Aryan Tripathi</span>
+    </div>
+
+    <!-- Message -->
+    <p class="mt-6 max-w-2xl text-gray-200 leading-relaxed">
+      In an era defined by rapid digital transformation, mastering practical digital marketing skills
+      is essential for career growth and business success. At Learnmize, we deliver comprehensive,
+      industry-aligned training through hands-on projects and expert-led offline sessions, ensuring
+      our learners are fully prepared to meet market demands.
+    </p>
+
+    <p class="mt-4 max-w-2xl text-gray-200 leading-relaxed">
+      Our approach combines rigorous skill development with real-world application, empowering
+      students, professionals, and entrepreneurs to confidently navigate the digital landscape and
+      drive measurable results.
+    </p>
+
+    <!-- Stats -->
+    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl">
+      <div class="bg-blue-600 text-center py-6 rounded-lg shadow-lg">
+        <p class="text-2xl font-bold">16,546,902</p>
+        <p class="mt-1 text-sm text-blue-100">Seconds of Confusion Eliminated</p>
+      </div>
+      <div class="bg-blue-600 text-center py-6 rounded-lg shadow-lg">
+        <p class="text-2xl font-bold">8,742</p>
+        <p class="mt-1 text-sm text-blue-100">Real Campaigns Run by Our Students</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-gray-50 py-12">
+  <!-- Heading -->
+  <div class="text-center max-w-2xl mx-auto">
+    <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">
+      Don’t Know What Digital Marketing Is?
+    </h2>
+    <p class="mt-2 text-gray-600">
+      Start With This <span class="font-semibold text-indigo-600">80-Minute Crash Course</span> – Clear, Practical, And Jargon-Free.
+    </p>
+  </div>
+
+  <!-- Image -->
+  <div class="mt-8 flex justify-center">
+    <div class="rounded-xl overflow-hidden shadow-lg max-w-4xl">
+      <img
+        src="https://learnmize.com/wp-content/uploads/2025/09/learnmize-thumbnail-1-1.webp"
+        alt="Group of students"
+        class="w-full"
+      />
+    </div>
+  </div>
+
+  <!-- Blue section -->
+  <div class="mt-0 bg-indigo-600 text-white py-12">
+    <div class="text-center">
+      <a
+        href="#"
+        class="inline-block bg-gradient-to-r from-indigo-400 to-blue-400 text-white font-medium px-6 py-3 rounded-full shadow-md hover:opacity-90 transition"
+      >
+        Watch the Crash Course – No Jargon, Just Clarity
+      </a>
+    </div>
+
+    <!-- Stats -->
+    <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto text-center">
+      <div>
+        <p class="text-2xl font-bold">100,000</p>
+        <p class="mt-1 text-indigo-100">Students Trained</p>
+      </div>
+      <div>
+        <p class="text-2xl font-bold">90%</p>
+        <p class="mt-1 text-indigo-100">Job Placement Rate</p>
+      </div>
+      <div>
+        <p class="text-2xl font-bold">100%</p>
+        <p class="mt-1 text-indigo-100">Practical Training</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="py-16 px-8 bg-gray-100">
+  <!-- Section Title -->
+  <h2 class="text-3xl font-semibold text-center text-gray-800 mb-12">Explore Our Content</h2>
+
+  <!-- Image Carousel -->
+  <div class="overflow-hidden mb-12">
+    <div class="flex space-x-4 animate-marquee">
+      <img src="https://via.placeholder.com/400x250?text=Image+1" alt="Image 1" class="w-64 h-40 object-cover rounded-lg shadow-lg">
+      <img src="https://via.placeholder.com/400x250?text=Image+2" alt="Image 2" class="w-64 h-40 object-cover rounded-lg shadow-lg">
+      <img src="https://via.placeholder.com/400x250?text=Image+3" alt="Image 3" class="w-64 h-40 object-cover rounded-lg shadow-lg">
+      <img src="https://via.placeholder.com/400x250?text=Image+4" alt="Image 4" class="w-64 h-40 object-cover rounded-lg shadow-lg">
+      <img src="https://via.placeholder.com/400x250?text=Image+5" alt="Image 5" class="w-64 h-40 object-cover rounded-lg shadow-lg">
+    </div>
+  </div>
+
+  <!-- YouTube Video -->
+  <div class="flex justify-center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="rounded-lg shadow-lg"></iframe>
+  </div>
+</section>
+
+<section class="bg-purple-600 py-16">
+  <div class="max-w-screen-xl mx-auto px-8">
+    <h2 class="text-4xl font-semibold text-white text-center mb-8">Still Curious?</h2>
+    <p class="text-lg text-white text-center mb-12">Find Answers To The Most Common Questions From Learners.</p>
+    
+    <div class="space-y-4">
+      <!-- Accordion Item 1 -->
+      <div>
+        <button class="w-full text-left px-6 py-4 text-xl font-semibold text-white bg-purple-700 rounded-md focus:outline-none" onclick="toggleAnswer(1)">
+          <span>Do you provide placement assistance?</span>
+        </button>
+        <div id="answer1" class="hidden bg-white p-4 text-black rounded-md mt-2">
+          <p>Yes, we provide placement assistance to eligible learners through our industry partnerships and career support services.</p>
+        </div>
+      </div>
+      
+      <!-- Accordion Item 2 -->
+      <div>
+        <button class="w-full text-left px-6 py-4 text-xl font-semibold text-white bg-purple-700 rounded-md focus:outline-none" onclick="toggleAnswer(2)">
+          <span>Do I need prior experience or a technical background?</span>
+        </button>
+        <div id="answer2" class="hidden bg-white p-4 text-black rounded-md mt-2">
+          <p>No prior experience is required. Our courses are designed to cater to beginners and provide all the necessary foundations.</p>
+        </div>
+      </div>
+
+      <!-- Accordion Item 3 -->
+      <div>
+        <button class="w-full text-left px-6 py-4 text-xl font-semibold text-white bg-purple-700 rounded-md focus:outline-none" onclick="toggleAnswer(3)">
+          <span>What’s the difference between self-paced and cohort programs?</span>
+        </button>
+        <div id="answer3" class="hidden bg-white p-4 text-black rounded-md mt-2">
+          <p>Self-paced programs allow learners to complete courses at their own speed, while cohort programs have set schedules with group learning.</p>
+        </div>
+      </div>
+
+      <!-- Accordion Item 4 -->
+      <div>
+        <button class="w-full text-left px-6 py-4 text-xl font-semibold text-white bg-purple-700 rounded-md focus:outline-none" onclick="toggleAnswer(4)">
+          <span>Do you offer EMI or installment plans?</span>
+        </button>
+        <div id="answer4" class="hidden bg-white p-4 text-black rounded-md mt-2">
+          <p>Yes, we offer EMI and installment plans for eligible learners. Please contact us for more details on payment options.</p>
+        </div>
+      </div>
+
+      <!-- Accordion Item 5 -->
+      <div>
+        <button class="w-full text-left px-6 py-4 text-xl font-semibold text-white bg-purple-700 rounded-md focus:outline-none" onclick="toggleAnswer(5)">
+          <span>Do I get a certificate?</span>
+        </button>
+        <div id="answer5" class="hidden bg-white p-4 text-black rounded-md mt-2">
+          <p>Yes, all learners receive a certificate upon completion of the course.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="bg-[#f6f6f6] py-12">
+  <div class="max-w-screen-xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+    
+    <!-- Programs Section -->
+    <div>
+      <h3 class="text-lg font-semibold text-gray-800 mb-4">Programs</h3>
+      <ul class="text-gray-600">
+        <li>Offline Digital Marketing Course</li>
+        <li>Online Digital Marketing Course</li>
+        <li>Recorded Courses</li>
+      </ul>
+      <a href="#" class="inline-block mt-4 text-blue-600 font-semibold">Explore Our Courses</a>
+      <p class="mt-2 text-gray-600">Get Playbooks, Templates, And Cohort Updates</p>
+    </div>
+
+    <!-- Consulting Services Section -->
+    <div>
+      <h3 class="text-lg font-semibold text-gray-800 mb-4">Consulting Services</h3>
+      <ul class="text-gray-600">
+        <li>D2C Consulting</li>
+        <li>Agency Consulting</li>
+        <li>Ed Tech Consulting</li>
+      </ul>
+    </div>
+
+    <!-- For Teams Section -->
+    <div>
+      <h3 class="text-lg font-semibold text-gray-800 mb-4">For Teams</h3>
+      <ul class="text-gray-600">
+        <li>Corporate Training</li>
+        <li>Personalized Coaching</li>
+        <li>Invite As Speaker</li>
+      </ul>
+    </div>
+
+    <!-- Resources Section -->
+    <div>
+      <h3 class="text-lg font-semibold text-gray-800 mb-4">Resources</h3>
+      <ul class="text-gray-600">
+        <li>Free 80-Min Intro To Digital Marketing</li>
+        <li>Download Syllabus (PDF)</li>
+        <li>Hire From Us</li>
+      </ul>
+    </div>
+
+    <!-- Address and Contact Information -->
+    <div class="col-span-1 md:col-span-2 mt-8 md:mt-0 bg-[#f0eeee]">
+      <h3 class="text-lg font-semibold text-gray-800 mb-4">Address</h3>
+      <p class="text-gray-600">Learnmize, Bhopal, 3rd Floor, Bank St, Near Pragati Petrol Pump, Zone-II, Maharana Pratap Nagar, Bhopal, Madhya Pradesh 462011</p>
+      <p class="text-gray-600 mt-2">Phone: +91-6264 2929 56</p>
+      <p class="text-gray-600 mt-2">Email: <a href="mailto:support@learnmize.com" class="text-blue-600">Support@Learnmize.Com</a></p>
+      <p class="text-gray-600 mt-2">Hours: Mon-Sat, 10:00-05:00 IST</p>
+    </div>
+
+    <!-- Map Section (Optional for large screens) -->
+    <div class="col-span-1 md:col-span-2 mt-8 md:mt-0">
+      <iframe src="https://www.google.com/maps/embed?pb=your-map-link" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+  </div>
+
+  <!-- Bottom Section (Links and Social Media) -->
+  <div class="mt-12 text-center">
+    <div class="flex justify-center gap-6 mb-6">
+      <a href="https://facebook.com" class="text-gray-600 hover:text-blue-600"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com" class="text-gray-600 hover:text-pink-600"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com" class="text-gray-600 hover:text-red-600"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p class="text-sm text-gray-500">&copy; Learnmize, 2025. All Rights Reserved.</p>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="mt-6 text-center text-sm text-gray-600">
+    <a href="#" class="mr-4">Terms Of Service</a>
+    <a href="#" class="mr-4">Privacy Policy</a>
+    <a href="#" class="mr-4">Refund Policy</a>
+  </div>
+</footer>
+<script>
+  function toggleAnswer(id) {
+    const answer = document.getElementById(`answer${id}`);
+    answer.classList.toggle('hidden');
+  }
+</script>
+<!-- Tailwind CSS Animation for Image Carousel -->
+<style>
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 15s linear infinite;
+  }
+</style>
+</body>
+</html>
